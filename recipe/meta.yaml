@@ -14,9 +14,9 @@ source:
   sha256: fead0f7e8a1a6aad9fc1e844fd0bc72b3623073f333d253f61314e8918df45fa
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 0
-  skip: true  # [win32]
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
@@ -63,8 +63,7 @@ about:
     The package contains rendering for HTML5, Rmarkdown and an indexing format for use
     in tracing and tracking are provided.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
