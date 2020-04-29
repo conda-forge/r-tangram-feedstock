@@ -31,6 +31,7 @@ requirements:
     - r-digest
     - r-htmltools
     - r-magrittr
+    - r-knitr
     - r-stringi
     - r-stringr
   run:
@@ -38,6 +39,7 @@ requirements:
     - r-r6
     - r-base64enc
     - r-digest
+    - r-knitr
     - r-htmltools
     - r-magrittr
     - r-stringi
@@ -60,9 +62,3 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
