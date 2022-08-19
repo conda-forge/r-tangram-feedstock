@@ -1,4 +1,4 @@
-{% set version = "0.7.1" %}
+{% set version = "0.8.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tangram_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tangram/tangram_{{ version }}.tar.gz
-  sha256: 3eca79d0bbb16e03d80d40eac71d0259a044b64f12282cb50580862d87cd105c
+  sha256: db7e3553313cf7b377bc81bb6c9401a4510569eb99a75fa2e945cc4d261fb0ee
 
 build:
   noarch: generic
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
