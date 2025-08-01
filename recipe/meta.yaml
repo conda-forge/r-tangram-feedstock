@@ -1,4 +1,4 @@
-{% set version = "0.8.2" %}
+{% set version = "0.8.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,11 +9,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tangram_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tangram/tangram_{{ version }}.tar.gz
-  sha256: c5c6d833b4fefae81371ead8d64ff99044bd269cfe1f6500ac43d76cc7df9ce4
+  sha256: 004868dae62b233e391dcc3f5a963ed2211779c4a3c420a686e45f2711f2d1ad
 
 build:
   noarch: generic
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
